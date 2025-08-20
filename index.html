@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disaster Club - NIT Raipur</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f8ff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 0 0 25px 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      animation: fadeInDown 1s ease;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      animation: bounce 2s infinite;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* ---------- CONTAINER ---------- */
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+    }
+
+    .section {
+      margin-bottom: 50px;
+      padding: 30px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      animation: fadeInUp 1s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-8px);
+    }
+
+    h2 {
+      color: #2563eb;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    /* ---------- LISTS ---------- */
+    ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    ul li {
+      background: #f1f5ff;
+      margin: 10px 0;
+      padding: 12px 15px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    ul li:hover {
+      background: #dbeafe;
+      transform: scale(1.03);
+    }
+
+    /* ---------- GRID CARDS ---------- */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .card {
+      background: #f9fafb;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: 500;
+      border: 2px solid #2563eb;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      background: #2563eb;
+      color: white;
+      transform: scale(1.08) rotate(-2deg);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    /* ---------- BUTTON ---------- */
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      background: #2563eb;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+      transform: scale(1.1);
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #2563eb;
+      color: white;
+      margin-top: 40px;
+      border-radius: 20px 20px 0 0;
+    }
+
+    footer a {
+      color: #facc15;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* ---------- ANIMATIONS ---------- */
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0);}
+      50% { transform: translateY(-10px);}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌍 Disaster Risk Reduction (DRR) Club</h1>
+    <p>"Be Prepared, Stay Safe, Act Smart"</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Activities Section -->
+    <div class="section">
+      <h2>🔥 Activities We Do</h2>
+      <ul>
+        <li>Awareness Campaigns & Documentaries 🎥</li>
+        <li>First Aid & CPR Training ⛑️</li>
+        <li>Workshops on Disasters & Climate 🌊</li>
+        <li>Mock Drills (Fire, Earthquake, Chemical) 🧯</li>
+        <li>Poster Competitions 🎨</li>
+        <li>Interactive Models on Land Subsidence 🏞️</li>
+      </ul>
+    </div>
+
+    <!-- Hiring Section -->
+    <div class="section">
+      <h2>🚀 We Are Hiring!</h2>
+      <p style="text-align:center;">Join us and take leadership roles, gain experience, and make a difference! 💪</p>
+
+      <h3 style="margin-top:20px; text-align:center; color:#1d4ed8;">👥 Positions Available</h3>
+      <div class="grid">
+        <div class="card">Coordinator</div>
+        <div class="card">Core-Coordinator</div>
+        <div class="card">Executive</div>
+        <div class="card">Volunteer</div>
+      </div>
+
+      <h3 style="margin-top:25px; text-align:center; color:#1d4ed8;">📂 Domains</h3>
+      <div class="grid">
+        <div class="card">Event Management</div>
+        <div class="card">PR & Outreach</div>
+        <div class="card">Social Media & Design</div>
+        <div class="card">Video Editing</div>
+      </div>
+
+      <div style="text-align:center;">
+        <button class="btn" onclick="applyNow()">📌 Apply Now</button>
+      </div>
+    </div>
+
+    <!-- Perks Section -->
+    <div class="section">
+      <h2>🎁 Perks & Benefits</h2>
+      <ul>
+        <li>Free T-shirt 👕</li>
+        <li>Free Certificates 📜</li>
+        <li>Networking & Leadership opportunities 🌟</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>📩 Contact us: <a href="mailto:drr.nitrr@gmail.com">drr.nitrr@gmail.com</a></p>
+    <p>📷 Instagram: <a href="https://instagram.com/disasterclubnitrr" target="_blank">@disasterclubnitrr</a></p>
+  </footer>
+
+  <script>
+    function applyNow() {
+       
+      window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdF4OkdgPGS5mHhJXBJwgJrgUThnF-09gYdXCCR79Y0fxWx8g/viewform?usp=header"; // replace with your Google Form link
+     alert("Thanks for showing interest! Redirecting you to the registration form...");
+    }
+  </script>
+
+</body>
+</html>
